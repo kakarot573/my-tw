@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见问题 - TwinCode</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.png" alt="TwinCode" height="40">
+                <span><a href="index.html" style="color: white; text-decoration: none;">TwinCode 文档中心</a></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="install.html">安装指南</a></li>
+                <li><a href="tutorial.html">使用教程</a></li>
+                <li><a href="faq.html" class="active">常见问题</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>❓ TwinCode 常见问题</h1>
+        
+        <div class="search-box">
+            <input type="text" placeholder="搜索问题...">
+            <button class="search-btn">搜索</button>
+        </div>
+        
+        <div class="faq-categories">
+            <!-- 安装问题 -->
+            <section class="faq-section">
+                <h2>🔧 安装问题</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>安装失败提示"权限不足"怎么办？</h3>
+                        <button class="toggle-btn">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>解决方案：</p>
+                        <ol>
+                            <li>右键安装程序选择"以管理员身份运行"</li>
+                            <li>关闭杀毒软件后重试</li>
+                            <li>尝试安装到其他目录（如D盘）</li>
+                        </ol>
+                        <div class="reference">
+                            <p>📌 相关文档：<a href="install.html#permission">安装权限说明</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>软件启动后立即闪退如何解决？</h3>
+                        <button class="toggle-btn">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>可能原因及解决方法：</p>
+                        <ul>
+                            <li><strong>显卡驱动问题：</strong> 更新显卡驱动</li>
+                            <li><strong>运行库缺失：</strong> 安装VC++运行库</li>
+                            <li><strong>系统兼容性：</strong> 右键程序 → 属性 → 兼容性 → 以Win7模式运行</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 使用问题 -->
+            <section class="faq-section">
+                <h2>🎮 使用问题</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>如何连接Arduino开发板？</h3>
+                        <button class="toggle-btn">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>完整连接步骤：</p>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <p>用USB线连接电脑和Arduino</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <p>在软件中选择 <strong>工具 → 开发板 → Arduino Uno</strong></p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <p>选择正确的COM端口</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <p>点击"上传"按钮</p>
+                            </div>
+                        </div>
+                        <div class="warning">
+                            <p>⚠️ <strong>注意：</strong> 上传前需要安装Arduino驱动</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>积木区找不到需要的模块怎么办？</h3>
+                        <button class="toggle-btn">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>解决方法：</p>
+                        <ul>
+                            <li>点击左下角 <strong>扩展</strong> 按钮添加新模块</li>
+                            <li>检查是否选择了正确的设备类型</li>
+                            <li>更新软件到最新版本</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 故障排除 -->
+            <section class="faq-section">
+                <h2>🛠️ 故障排除</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>程序上传失败错误代码0x8001</h3>
+                        <button class="toggle-btn">+</button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>常见原因及解决方案：</p>
+                        <table class="solution-table">
+                            <tr>
+                                <th>错误现象</th>
+                                <th>可能原因</th>
+                                <th>解决方案</th>
+                            </tr>
+                            <tr>
+                                <td>上传卡在50%</td>
+                                <td>USB线接触不良</td>
+                                <td>更换USB线或接口</td>
+                            </tr>
+                            <tr>
+                                <td>提示驱动错误</td>
+                                <td>缺少CH340驱动</td>
+                                <td>下载安装驱动</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- 未解决问题表单 -->
+        <div class="unsolved-form">
+            <h2>没有找到您的问题？</h2>
+            <form>
+                <div class="form-group">
+                    <label for="question">您的问题：</label>
+                    <textarea id="question" rows="3" placeholder="详细描述您遇到的问题..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contact">联系方式（可选）：</label>
+                    <input type="text" id="contact" placeholder="邮箱/电话">
+                </div>
+                <button type="submit" class="btn">提交问题</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 TwinCode 文档中心 | 版本 v2.6.3</p>
+    </footer>
+
+    <script>
+        // 简单的FAQ切换功能
+        document.querySelectorAll('.toggle-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const answer = btn.closest('.faq-item').querySelector('.faq-answer');
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                btn.textContent = answer.style.display === 'block' ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>

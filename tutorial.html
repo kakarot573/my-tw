@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用教程 - TwinCode</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.png" alt="TwinCode" height="40">
+                <span><a href="index.html" style="color: white; text-decoration: none;">TwinCode 文档中心</a></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="install.html">安装指南</a></li>
+                <li><a href="tutorial.html" class="active">使用教程</a></li>
+                <li><a href="faq.html">常见问题</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>🚀 TwinCode 使用教程</h1>
+        
+        <div class="tutorial-sections">
+            <!-- 基础教程 -->
+            <section class="tutorial-section">
+                <h2>1. 基础操作</h2>
+                
+                <div class="tutorial-step">
+                    <h3>1.1 创建新项目</h3>
+                    <p>点击左上角 <strong>文件 → 新建项目</strong> 开始创作：</p>
+                    <img src="assets/images/new-project.png" alt="新建项目" class="tutorial-img">
+                    <div class="tips">
+                        <p>💡 <strong>提示：</strong> 项目会自动保存在本地文档目录</p>
+                    </div>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>1.2 基本编程界面</h3>
+                    <p>主要工作区分为三个部分：</p>
+                    <div class="columns">
+                        <div class="column">
+                            <h4>积木区</h4>
+                            <p>所有可用的编程积木</p>
+                        </div>
+                        <div class="column">
+                            <h4>编程区</h4>
+                            <p>拖拽积木进行编程</p>
+                        </div>
+                        <div class="column">
+                            <h4>预览区</h4>
+                            <p>实时查看运行效果</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 进阶教程 -->
+            <section class="tutorial-section">
+                <h2>2. 进阶功能</h2>
+                
+                <div class="tutorial-step">
+                    <h3>2.1 硬件连接</h3>
+                    <p>连接 Arduino/micro:bit 开发板的步骤：</p>
+                    <ol>
+                        <li>用USB线连接电脑和设备</li>
+                        <li>在软件中选择设备类型</li>
+                        <li>点击"连接设备"按钮</li>
+                        <li>上传程序到设备</li>
+                    </ol>
+                    <div class="code-block">
+                        <strong>成功连接标志：</strong> 状态栏显示绿色"已连接"
+                    </div>
+                </div>
+                
+                <div class="tutorial-step">
+                    <h3>2.2 扩展功能</h3>
+                    <p>安装扩展模块的方法：</p>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <p>点击左下角 <strong>扩展</strong> 按钮</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <p>搜索需要的扩展（如：物联网、AI）</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <p>点击"添加"按钮</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 示例项目 -->
+            <section class="tutorial-section">
+                <h2>3. 示例项目</h2>
+                
+                <div class="project-card">
+                    <h3>闪烁LED灯</h3>
+                    <p>让连接的LED灯每隔1秒闪烁：</p>
+                    <div class="code-sample">
+                        <img src="assets/images/blink-code.png" alt="闪烁LED代码">
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="btn">下载项目文件</a>
+                        <a href="#" class="btn btn-secondary">查看视频教程</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- 导航按钮 -->
+        <div class="nav-buttons">
+            <a href="install.html" class="btn btn-secondary">← 返回安装指南</a>
+            <a href="faq.html" class="btn btn-primary">查看常见问题 →</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 TwinCode 文档中心 | 版本 v2.6.3</p>
+    </footer>
+</body>
+</html>
